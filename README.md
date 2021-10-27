@@ -1,4 +1,6 @@
-# Tesla Cooler Circuit
+# Tesla Cooler Electrical
+
+![Assembled Board Installed](./photo.jpg)
 
 See: [esologic.com/tesla-cooler](https://www.esologic.com/tesla-cooler/)
 
