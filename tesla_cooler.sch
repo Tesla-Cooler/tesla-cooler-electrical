@@ -1,0 +1,691 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "K80 Cooler"
+Date "2021-10-03"
+Rev "1"
+Comp "www.esologic.com"
+Comment1 "Fan controller based around Raspberry Pi Pico"
+Comment2 "Can drive two coolers for two GPUs, cooler  A and cooler B"
+Comment3 ""
+Comment4 "Devon Bray"
+$EndDescr
+$Comp
+L pi_pico:PICO_RP2040 U?
+U 1 1 6157CD33
+P 5650 4000
+F 0 "U?" H 5625 5365 50  0000 C CNN
+F 1 "PICO_RP2040" H 5625 5274 50  0000 C CNN
+F 2 "" H 5550 5450 50  0001 C CNN
+F 3 "" H 5550 5450 50  0001 C CNN
+	1    5650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615896E2
+P 3000 2000
+F 0 "#PWR?" H 3000 1750 50  0001 C CNN
+F 1 "GND" H 3005 1827 50  0000 C CNN
+F 2 "" H 3000 2000 50  0001 C CNN
+F 3 "" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 615C5986
+P 2050 1250
+F 0 "J?" H 2022 1182 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2022 1273 50  0000 R CNN
+F 2 "" H 2050 1250 50  0001 C CNN
+F 3 "~" H 2050 1250 50  0001 C CNN
+	1    2050 1250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615C9E68
+P 3400 1800
+F 0 "R?" H 3470 1846 50  0000 L CNN
+F 1 "10K" H 3470 1755 50  0000 L CNN
+F 2 "" V 3330 1800 50  0001 C CNN
+F 3 "~" H 3400 1800 50  0001 C CNN
+	1    3400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615CA47D
+P 3400 2000
+F 0 "#PWR?" H 3400 1750 50  0001 C CNN
+F 1 "GND" H 3405 1827 50  0000 C CNN
+F 2 "" H 3400 2000 50  0001 C CNN
+F 3 "" H 3400 2000 50  0001 C CNN
+	1    3400 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1600 3400 1600
+Wire Wire Line
+	3400 1600 3400 1650
+Wire Wire Line
+	3000 1350 3000 1400
+Wire Wire Line
+	2250 1350 3000 1350
+Wire Wire Line
+	2250 1250 2350 1250
+Wire Wire Line
+	3400 1950 3400 2000
+Wire Wire Line
+	3000 1800 3000 2000
+$Comp
+L power:GND #PWR?
+U 1 1 616830CA
+P 3000 2950
+F 0 "#PWR?" H 3000 2700 50  0001 C CNN
+F 1 "GND" H 3005 2777 50  0000 C CNN
+F 2 "" H 3000 2950 50  0001 C CNN
+F 3 "" H 3000 2950 50  0001 C CNN
+	1    3000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 616830D4
+P 2050 2200
+F 0 "J?" H 2022 2132 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2022 2223 50  0000 R CNN
+F 2 "" H 2050 2200 50  0001 C CNN
+F 3 "~" H 2050 2200 50  0001 C CNN
+	1    2050 2200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616830DE
+P 3400 2750
+F 0 "R?" H 3470 2796 50  0000 L CNN
+F 1 "10K" H 3470 2705 50  0000 L CNN
+F 2 "" V 3330 2750 50  0001 C CNN
+F 3 "~" H 3400 2750 50  0001 C CNN
+	1    3400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616830E8
+P 3400 2950
+F 0 "#PWR?" H 3400 2700 50  0001 C CNN
+F 1 "GND" H 3405 2777 50  0000 C CNN
+F 2 "" H 3400 2950 50  0001 C CNN
+F 3 "" H 3400 2950 50  0001 C CNN
+	1    3400 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2550 3400 2550
+Wire Wire Line
+	3400 2550 3400 2600
+Wire Wire Line
+	3000 2300 3000 2350
+Wire Wire Line
+	2250 2300 3000 2300
+Wire Wire Line
+	3400 2900 3400 2950
+Wire Wire Line
+	3000 2750 3000 2950
+$Comp
+L power:GND #PWR?
+U 1 1 6169A330
+P 3000 3900
+F 0 "#PWR?" H 3000 3650 50  0001 C CNN
+F 1 "GND" H 3005 3727 50  0000 C CNN
+F 2 "" H 3000 3900 50  0001 C CNN
+F 3 "" H 3000 3900 50  0001 C CNN
+	1    3000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 6169A33A
+P 2050 3150
+F 0 "J?" H 2022 3082 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2022 3173 50  0000 R CNN
+F 2 "" H 2050 3150 50  0001 C CNN
+F 3 "~" H 2050 3150 50  0001 C CNN
+	1    2050 3150
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6169A344
+P 3400 3700
+F 0 "R?" H 3470 3746 50  0000 L CNN
+F 1 "10K" H 3470 3655 50  0000 L CNN
+F 2 "" V 3330 3700 50  0001 C CNN
+F 3 "~" H 3400 3700 50  0001 C CNN
+	1    3400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6169A34E
+P 3400 3900
+F 0 "#PWR?" H 3400 3650 50  0001 C CNN
+F 1 "GND" H 3405 3727 50  0000 C CNN
+F 2 "" H 3400 3900 50  0001 C CNN
+F 3 "" H 3400 3900 50  0001 C CNN
+	1    3400 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3500 3400 3500
+Wire Wire Line
+	3400 3500 3400 3550
+Wire Wire Line
+	3000 3250 3000 3300
+Wire Wire Line
+	2250 3250 3000 3250
+Wire Wire Line
+	3400 3850 3400 3900
+Wire Wire Line
+	3000 3700 3000 3900
+$Comp
+L power:GND #PWR?
+U 1 1 616A64F9
+P 3000 4850
+F 0 "#PWR?" H 3000 4600 50  0001 C CNN
+F 1 "GND" H 3005 4677 50  0000 C CNN
+F 2 "" H 3000 4850 50  0001 C CNN
+F 3 "" H 3000 4850 50  0001 C CNN
+	1    3000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 616A6503
+P 2050 4100
+F 0 "J?" H 2022 4032 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2022 4123 50  0000 R CNN
+F 2 "" H 2050 4100 50  0001 C CNN
+F 3 "~" H 2050 4100 50  0001 C CNN
+	1    2050 4100
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616A650D
+P 3400 4650
+F 0 "R?" H 3470 4696 50  0000 L CNN
+F 1 "10K" H 3470 4605 50  0000 L CNN
+F 2 "" V 3330 4650 50  0001 C CNN
+F 3 "~" H 3400 4650 50  0001 C CNN
+	1    3400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616A6517
+P 3400 4850
+F 0 "#PWR?" H 3400 4600 50  0001 C CNN
+F 1 "GND" H 3405 4677 50  0000 C CNN
+F 2 "" H 3400 4850 50  0001 C CNN
+F 3 "" H 3400 4850 50  0001 C CNN
+	1    3400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4450 3400 4450
+Wire Wire Line
+	3400 4450 3400 4500
+Wire Wire Line
+	3000 4200 3000 4250
+Wire Wire Line
+	2250 4200 3000 4200
+Wire Wire Line
+	3400 4800 3400 4850
+Wire Wire Line
+	3000 4650 3000 4850
+$Comp
+L power:GND #PWR?
+U 1 1 616B9BF3
+P 3000 5800
+F 0 "#PWR?" H 3000 5550 50  0001 C CNN
+F 1 "GND" H 3005 5627 50  0000 C CNN
+F 2 "" H 3000 5800 50  0001 C CNN
+F 3 "" H 3000 5800 50  0001 C CNN
+	1    3000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 616B9BFD
+P 2050 5050
+F 0 "J?" H 2022 4982 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2022 5073 50  0000 R CNN
+F 2 "" H 2050 5050 50  0001 C CNN
+F 3 "~" H 2050 5050 50  0001 C CNN
+	1    2050 5050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616B9C07
+P 3400 5600
+F 0 "R?" H 3470 5646 50  0000 L CNN
+F 1 "10K" H 3470 5555 50  0000 L CNN
+F 2 "" V 3330 5600 50  0001 C CNN
+F 3 "~" H 3400 5600 50  0001 C CNN
+	1    3400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616B9C11
+P 3400 5800
+F 0 "#PWR?" H 3400 5550 50  0001 C CNN
+F 1 "GND" H 3405 5627 50  0000 C CNN
+F 2 "" H 3400 5800 50  0001 C CNN
+F 3 "" H 3400 5800 50  0001 C CNN
+	1    3400 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5400 3400 5400
+Wire Wire Line
+	3400 5400 3400 5450
+Wire Wire Line
+	3000 5150 3000 5200
+Wire Wire Line
+	2250 5150 3000 5150
+Wire Wire Line
+	3400 5750 3400 5800
+Wire Wire Line
+	3000 5600 3000 5800
+$Comp
+L power:GND #PWR?
+U 1 1 616C2F70
+P 3000 6750
+F 0 "#PWR?" H 3000 6500 50  0001 C CNN
+F 1 "GND" H 3005 6577 50  0000 C CNN
+F 2 "" H 3000 6750 50  0001 C CNN
+F 3 "" H 3000 6750 50  0001 C CNN
+	1    3000 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 616C2F7A
+P 2050 6000
+F 0 "J?" H 2022 5932 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2022 6023 50  0000 R CNN
+F 2 "" H 2050 6000 50  0001 C CNN
+F 3 "~" H 2050 6000 50  0001 C CNN
+	1    2050 6000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616C2F84
+P 3400 6550
+F 0 "R?" H 3470 6596 50  0000 L CNN
+F 1 "10K" H 3470 6505 50  0000 L CNN
+F 2 "" V 3330 6550 50  0001 C CNN
+F 3 "~" H 3400 6550 50  0001 C CNN
+	1    3400 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616C2F8E
+P 3400 6750
+F 0 "#PWR?" H 3400 6500 50  0001 C CNN
+F 1 "GND" H 3405 6577 50  0000 C CNN
+F 2 "" H 3400 6750 50  0001 C CNN
+F 3 "" H 3400 6750 50  0001 C CNN
+	1    3400 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6350 3400 6350
+Wire Wire Line
+	3400 6350 3400 6400
+Wire Wire Line
+	3000 6100 3000 6150
+Wire Wire Line
+	2250 6100 3000 6100
+Wire Wire Line
+	3400 6700 3400 6750
+Wire Wire Line
+	3000 6550 3000 6750
+Wire Wire Line
+	2350 1250 2350 2200
+Wire Wire Line
+	2350 2200 2250 2200
+Wire Wire Line
+	2350 2200 2350 3150
+Wire Wire Line
+	2350 3150 2250 3150
+Connection ~ 2350 2200
+Wire Wire Line
+	2350 3150 2350 4100
+Wire Wire Line
+	2350 4100 2250 4100
+Connection ~ 2350 3150
+Wire Wire Line
+	2350 4100 2350 5050
+Wire Wire Line
+	2350 5050 2250 5050
+Connection ~ 2350 4100
+Wire Wire Line
+	2350 5050 2350 6000
+Wire Wire Line
+	2350 6000 2250 6000
+Connection ~ 2350 5050
+Wire Wire Line
+	3400 1600 4850 1600
+Wire Wire Line
+	4850 1600 4850 3150
+Wire Wire Line
+	4850 3150 5000 3150
+Connection ~ 3400 1600
+Wire Wire Line
+	3400 2550 4750 2550
+Wire Wire Line
+	4750 2550 4750 3450
+Wire Wire Line
+	4750 3450 5000 3450
+Connection ~ 3400 2550
+Wire Wire Line
+	3400 3500 4650 3500
+Wire Wire Line
+	4650 3500 4650 3650
+Wire Wire Line
+	4650 3650 5000 3650
+Connection ~ 3400 3500
+Wire Wire Line
+	3400 4450 4500 4450
+Wire Wire Line
+	4500 4450 4500 3950
+Wire Wire Line
+	4500 3950 5000 3950
+Connection ~ 3400 4450
+Wire Wire Line
+	3400 5400 4600 5400
+Wire Wire Line
+	4600 5400 4600 4150
+Wire Wire Line
+	4600 4150 5000 4150
+Connection ~ 3400 5400
+Wire Wire Line
+	3400 6350 4700 6350
+Wire Wire Line
+	4700 6350 4700 4450
+Wire Wire Line
+	4700 4450 5000 4450
+Connection ~ 3400 6350
+NoConn ~ 2250 1150
+NoConn ~ 2250 2100
+NoConn ~ 2250 3050
+NoConn ~ 2250 4000
+NoConn ~ 2250 4950
+NoConn ~ 2250 5900
+NoConn ~ 5000 3050
+NoConn ~ 5000 3250
+NoConn ~ 5000 3350
+NoConn ~ 5000 3550
+NoConn ~ 5000 3750
+NoConn ~ 5000 3850
+NoConn ~ 5000 4050
+NoConn ~ 5000 4250
+NoConn ~ 5000 4350
+NoConn ~ 5000 4550
+NoConn ~ 5000 4650
+NoConn ~ 5000 4750
+NoConn ~ 5000 4950
+NoConn ~ 5000 4850
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 615DB3F2
+P 7200 1000
+F 0 "J?" H 7280 1042 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7280 951 50  0000 L CNN
+F 2 "" H 7200 1000 50  0001 C CNN
+F 3 "~" H 7200 1000 50  0001 C CNN
+	1    7200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3250 6900 3250
+Wire Wire Line
+	6900 3250 6900 1100
+Wire Wire Line
+	6900 1100 7000 1100
+Wire Wire Line
+	7000 1000 6800 1000
+Wire Wire Line
+	6800 1000 6800 3150
+Wire Wire Line
+	6800 3150 6250 3150
+Wire Wire Line
+	7000 900  2350 900 
+Wire Wire Line
+	2350 1250 2350 900 
+Connection ~ 2350 1250
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 615FBF17
+P 7900 3850
+F 0 "J?" H 7872 3732 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7872 3823 50  0000 R CNN
+F 2 "" H 7900 3850 50  0001 C CNN
+F 3 "~" H 7900 3850 50  0001 C CNN
+	1    7900 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 616117FB
+P 7900 4100
+F 0 "J?" H 7872 3982 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7872 4073 50  0000 R CNN
+F 2 "" H 7900 4100 50  0001 C CNN
+F 3 "~" H 7900 4100 50  0001 C CNN
+	1    7900 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6800 3750 6800 4000
+$Comp
+L Device:R R?
+U 1 1 616170F9
+P 6800 4400
+F 0 "R?" H 6870 4446 50  0000 L CNN
+F 1 "10K" H 6870 4355 50  0000 L CNN
+F 2 "" V 6730 4400 50  0001 C CNN
+F 3 "~" H 6800 4400 50  0001 C CNN
+	1    6800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4100 6800 4250
+$Comp
+L Device:R R?
+U 1 1 6161BD2F
+P 6500 4400
+F 0 "R?" H 6570 4446 50  0000 L CNN
+F 1 "10K" H 6570 4355 50  0000 L CNN
+F 2 "" V 6430 4400 50  0001 C CNN
+F 3 "~" H 6500 4400 50  0001 C CNN
+	1    6500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4100 6350 4100
+Connection ~ 6800 4100
+Wire Wire Line
+	6500 3850 6250 3850
+Connection ~ 6500 3850
+Wire Wire Line
+	6500 3850 6500 4250
+Wire Wire Line
+	6350 4100 6350 3950
+Wire Wire Line
+	6350 3950 6250 3950
+Wire Wire Line
+	6800 3750 6800 3450
+Wire Wire Line
+	6800 3450 6250 3450
+Connection ~ 6800 3750
+NoConn ~ 6250 3050
+NoConn ~ 6250 3350
+NoConn ~ 6250 3550
+NoConn ~ 6250 3650
+NoConn ~ 6250 3750
+NoConn ~ 6250 4050
+NoConn ~ 6250 4150
+NoConn ~ 6250 4250
+NoConn ~ 6250 4350
+NoConn ~ 6250 4450
+NoConn ~ 6250 4550
+NoConn ~ 6250 4650
+NoConn ~ 6250 4850
+NoConn ~ 6250 4750
+Wire Wire Line
+	6500 4550 6500 4600
+Wire Wire Line
+	6800 4550 6800 4600
+$Comp
+L power:GND #PWR?
+U 1 1 6162E003
+P 6500 4600
+F 0 "#PWR?" H 6500 4350 50  0001 C CNN
+F 1 "GND" H 6505 4427 50  0000 C CNN
+F 2 "" H 6500 4600 50  0001 C CNN
+F 3 "" H 6500 4600 50  0001 C CNN
+	1    6500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6162B6A6
+P 6800 4600
+F 0 "#PWR?" H 6800 4350 50  0001 C CNN
+F 1 "GND" H 6805 4427 50  0000 C CNN
+F 2 "" H 6800 4600 50  0001 C CNN
+F 3 "" H 6800 4600 50  0001 C CNN
+	1    6800 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6250 4950
+Text Label 6550 900  0    50   ~ 0
+12V
+Text Label 6800 1000 2    50   ~ 0
+5V
+Text Label 6900 1300 0    50   ~ 0
+GND
+Text Notes 7700 850  0    50   ~ 0
+Supplied via ATX power supply
+Text Notes 2150 1050 2    50   ~ 0
+Tachometer signal will be on this pin if\nthe fan provides it. Measuring that \nsignal on an oscilloscope I found that\n it produced voltage spikes of \naround 20V which would hurt the pico\n so I did not use this signal.
+Wire Notes Line
+	2050 1150 900  1150
+Wire Notes Line
+	900  1150 900  1000
+Text Label 3650 1600 0    50   ~ 10
+Cooler_A_Fan_0
+Text Label 3650 2550 0    50   ~ 10
+Cooler_A_Fan_1
+Text Label 3650 3500 0    50   ~ 10
+Cooler_A_Fan_2
+Text Label 3650 4450 0    50   ~ 10
+Cooler_B_Fan_0
+Text Label 3650 5400 0    50   ~ 10
+Cooler_B_Fan_1
+Text Label 3650 6350 0    50   ~ 10
+Cooler_B_Fan_2
+Text Notes 8700 4000 0    50   ~ 0
+Connects to 10K 3950 NTC Thermistors
+Wire Wire Line
+	6800 3750 7700 3750
+Wire Wire Line
+	6500 3850 7700 3850
+Wire Wire Line
+	6800 4000 7700 4000
+Wire Wire Line
+	6800 4100 7700 4100
+Text Label 7600 4100 2    39   ~ 8
+Cooler_A_Thermistor
+Text Label 7600 3750 2    39   ~ 8
+Cooler_B_Thermistor
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 6157F62C
+P 3100 1600
+F 0 "Q?" H 3305 1646 50  0000 L CNN
+F 1 "FQP30N06L" H 3305 1555 50  0000 L CNN
+F 2 "" H 3300 1700 50  0001 C CNN
+F 3 "~" H 3100 1600 50  0001 C CNN
+	1    3100 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 616C6FED
+P 3100 2550
+F 0 "Q?" H 3305 2596 50  0000 L CNN
+F 1 "FQP30N06L" H 3305 2505 50  0000 L CNN
+F 2 "" H 3300 2650 50  0001 C CNN
+F 3 "~" H 3100 2550 50  0001 C CNN
+	1    3100 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 616C8B5F
+P 3100 3500
+F 0 "Q?" H 3305 3546 50  0000 L CNN
+F 1 "FQP30N06L" H 3305 3455 50  0000 L CNN
+F 2 "" H 3300 3600 50  0001 C CNN
+F 3 "~" H 3100 3500 50  0001 C CNN
+	1    3100 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 616C95E5
+P 3100 4450
+F 0 "Q?" H 3305 4496 50  0000 L CNN
+F 1 "FQP30N06L" H 3305 4405 50  0000 L CNN
+F 2 "" H 3300 4550 50  0001 C CNN
+F 3 "~" H 3100 4450 50  0001 C CNN
+	1    3100 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 616C9F90
+P 3100 5400
+F 0 "Q?" H 3305 5446 50  0000 L CNN
+F 1 "FQP30N06L" H 3305 5355 50  0000 L CNN
+F 2 "" H 3300 5500 50  0001 C CNN
+F 3 "~" H 3100 5400 50  0001 C CNN
+	1    3100 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 616CB07A
+P 3100 6350
+F 0 "Q?" H 3305 6396 50  0000 L CNN
+F 1 "FQP30N06L" H 3305 6305 50  0000 L CNN
+F 2 "" H 3300 6450 50  0001 C CNN
+F 3 "~" H 3100 6350 50  0001 C CNN
+	1    3100 6350
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

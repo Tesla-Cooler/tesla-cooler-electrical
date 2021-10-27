@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name pi_pico)(type Legacy)(uri /home/devon/Documents/k80_cooler_circuit/external_libraries/rpi/pico/kicad/pico_rp2040.lib)(options "")(descr ""))
+)
